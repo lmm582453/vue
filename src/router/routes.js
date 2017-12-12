@@ -1,14 +1,18 @@
-// 登录
-import Login from '@/pages/Login'
-
 const routes = [
   {
     path: '/',
-    redirect: '/login'
-  }, {
-    path: '/login',
-    name: 'login',
-    component: Login
+    redirect: '/home',
+    component: resolve => {
+      require(['@/pages/Layout'], resolve)
+    },
+    children: [
+      {
+        path: 'home',
+        component: resolve => {
+          require(['@/pages/Home'], resolve)
+        }
+      }
+    ]
   }
 ]
 

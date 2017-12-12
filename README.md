@@ -1,6 +1,4 @@
-# Vue全家桶
-
-> A Vue.js project
+# 赫柏租房管理系统
 
 ## Build Setup
 

@@ -10,13 +10,38 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  .el-menu {
+    border: none;
+  }
+  .el-card {
+    .el-card__header {
+      padding: 30px 20px;
+    }
+  }
+  .el-pagination {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.el-tabs__nav-wrap::after {
+  background-color: #FFF;
+}
+
+.pagination {
+  margin-top: 20px;
 }
 </style>
