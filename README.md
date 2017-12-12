@@ -1,5 +1,3 @@
-# 赫柏租房管理系统
-
 ## Build Setup
 
 ``` bash
